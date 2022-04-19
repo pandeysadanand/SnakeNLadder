@@ -1,9 +1,10 @@
 package com.bridgelabz.Assignment4.SnakeLadder;
 
 /**
- * @author atik Continue till winning position
+ * @author Sadanand Pandey Ensure the player gets to exact winning position 100
  */
 public class SnakeNLadder {
+
 	private static final int noPlay = 0;
 	private static final int ladder = 1;
 	private static final int snake = 2;
@@ -15,6 +16,7 @@ public class SnakeNLadder {
 		int positionA = 0;
 
 		while (positionA < maxPosition) {
+
 			int dice = (int) (Math.floor(Math.random() * 6) + 1);
 			System.out.println("dice : " + dice);
 			int checkPlay = (int) Math.floor(Math.random() * 10) % 3;
@@ -26,12 +28,16 @@ public class SnakeNLadder {
 
 			case ladder:
 				positionA += dice;
+				if (positionA > maxPosition) {
+					positionA = positionA - dice;
+				}
 				break;
 
 			case snake:
 				positionA -= dice;
-				if (positionA < minPosition)
+				if (positionA < minPosition) {
 					positionA = 0;
+				}
 				break;
 			}
 			System.out.println("end : " + positionA);
