@@ -1,7 +1,7 @@
 package com.bridgelabz.Assignment4.SnakeLadder;
 
 /**
- * @author atik Continue till winning position
+ * @author : Sadanand Pandey Continue till winning position
  */
 public class SnakeNLadder {
 	private static final int noPlay = 0;
