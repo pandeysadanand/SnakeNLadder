@@ -1,6 +1,6 @@
 package com.bridgelabz.Assignment4.SnakeLadder;
-/**
- * @author atik
+/*
+ * @author Sadanand Pandey
  * Generate randome dice number
  */
 public class SnakeNLadder {
